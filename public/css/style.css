@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap');
+
+:root{
+    --color-text: #ffffff;
+    --color-primary: #e30992;
+    --color-primary-light: #f013a6;
+    --color-danger: #ff4141;
+    --color-bg: #313131;
+    --white: #313131;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: var(--color-bg);
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    max-width: 80%;
+    min-height: 90vh;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    place-content: center;
+}
+
+.card{
+    margin-top: 2rem;
+    background-color: var(--white);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.card h2{
+    color: var(--color-text);
+    font-weight: 500;
+}
+.card h2 b{
+    color: var(--color-primary);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+form input{
+    margin-right: 5px;
+}
+
+form input:nth-child(1){
+    display: block;
+    width: 100%;
+    padding: .7rem;
+    border-radius: 10px;
+    /* background-color: white; */
+    outline: none;
+    font-weight: 500;
+    transition: .3s ease-in-out;
+}
+
+form input:nth-child(1):focus, form input:nth-child(1):hover{
+    border: 1px solid var(--color-primary);
+}
+
+.btn-submit{
+    /* background-color: var(--color-primary); */
+    background: linear-gradient(to right, #cc2b5e 0%, #753a88 100%);
+    border: none;
+    margin-top: 20px;
+    width: 200px!important;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 10px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+}
+
+.btn{
+    margin-bottom: 1rem;
+    padding: 0.4rem;
+    /* background-color: var(--color-primary); */
+    background: linear-gradient(to right, #cc2b5e 0%, #753a88 100%);
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+}
+
+ .content{
+    margin-left: 4px;
+    margin-right: 4px;
+    min-width: 300px;
+    border-radius: 10px;
+    margin-top: 1rem;
+    background-color: var(--color-bg);
+    display: grid;
+    place-content: center;
+}
+
+.content video{
+    justify-self: center;
+    width: 300px;
+    border-radius: 10px;
+}
+
+@media screen and (min-width: 720px) {
+    .content{
+        width: 400px;
+    }
+    .content ol{
+        font-size: 12px;
+    }
+
+    .content video{
+        width: 200px;
+    }
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer h3{
+    color: var(--color-text);
+    font-weight: 300;
+    font-size: 14px;
+    margin: 0;
+}
+footer b{
+    font-weight: 500;
+    color: var(--color-primary);
+}
+
+footer p{
+    margin: 0;
+    font-size: 12px;
+    text-align: center;
+    color: var(--color-text);
+}
+
+.btn-instagram{
+    text-decoration: none;
+}
+
+.messageError{
+    color: var(--color-danger);
+}
